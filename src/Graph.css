@@ -1,0 +1,55 @@
+/* Graph Container */
+.graph-container {
+    text-align: center;
+    padding: 20px;
+    background: rgba(10, 10, 10, 0.95);
+    border: 2px solid #00ffcc;
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.8);
+    border-radius: 10px;
+    max-width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the graph */
+    justify-content: center;
+}
+
+/* Graph Chart */
+canvas {
+    border: 2px solid #00ffcc;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.8);
+    width: 80% !important;
+    height: 450px !important;
+    margin: auto;
+    display: block; /* Ensures proper centering */
+}
+
+/* Download Report Button */
+.pdf-btn {
+    background: linear-gradient(90deg, #ff3b3b, #ff9900);
+    padding: 14px 30px;
+    font-size: 1.2rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(255, 61, 61, 0.7);
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content; /* Makes the button size dynamic */
+    margin-left: auto;
+    margin-right: auto; /* Centers the button */
+}
+
+.pdf-btn:hover {
+    background: linear-gradient(90deg, #ff9900, #ff3b3b);
+    box-shadow: 0 0 25px rgba(255, 61, 61, 1);
+    transform: scale(1.1);
+}

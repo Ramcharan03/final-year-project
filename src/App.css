@@ -1,0 +1,152 @@
+/* Global Styles */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+
+body {
+    background: linear-gradient(120deg, #0a0a0a, #141414, #1e1e1e);
+    font-family: "Orbitron", sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Blockchain Animated Background */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("https://upload.wikimedia.org/wikipedia/commons/6/6f/Ethereum-icon-purple.svg") no-repeat center;
+    background-size: 60%;
+    opacity: 0.05;
+    z-index: -1;
+    animation: float 15s infinite alternate;
+}
+
+@keyframes float {
+    from {
+        transform: translateY(-20px);
+    }
+    to {
+        transform: translateY(20px);
+    }
+}
+
+/* Main Container */
+.App {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Animated Heading */
+h1 {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #00f2ff;
+    text-shadow: 0 0 15px #00f2ff, 0 0 30px #00f2ff;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #00f2ff, 0 0 20px #00f2ff;
+    }
+    to {
+        text-shadow: 0 0 20px #00f2ff, 0 0 30px #00f2ff;
+    }
+}
+
+/* Upload Section */
+.scanner-container {
+    background: rgba(25, 25, 25, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid #00f2ff;
+    box-shadow: 0 0 30px rgba(0, 242, 255, 0.5);
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.scanner-container:hover {
+    transform: scale(1.05);
+}
+
+/* File Upload */
+input[type="file"] {
+    padding: 12px;
+    margin: 15px 0;
+    border: 2px solid #00f2ff;
+    background: #222;
+    color: #00f2ff;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+input[type="file"]:hover {
+    background: #00f2ff;
+    color: #222;
+}
+
+/* Buttons */
+button {
+    background: linear-gradient(90deg, #00f2ff, #0077ff);
+    border: none;
+    color: white;
+    padding: 14px 22px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.5);
+}
+
+button:hover {
+    background: linear-gradient(90deg, #0077ff, #00f2ff);
+    box-shadow: 0 0 25px rgba(0, 242, 255, 0.8);
+    transform: scale(1.1);
+}
+
+/* Navigation Buttons */
+.nav-btn {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/* Vulnerability Report */
+.vulnerability-report {
+    margin-top: 20px;
+    background: rgba(20, 20, 20, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ff3b3b;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+}
+
+.vulnerability-report h2 {
+    color: #ff3b3b;
+}
+
+.vulnerability-report ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.vulnerability-report li {
+    background: #222;
+    margin: 5px 0;
+    padding: 10px;
+    border-left: 5px solid #ff3b3b;
+    transition: 0.3s;
+}
+
+.vulnerability-report li:hover {
+    background: #ff3b3b;
+    color: #222;
+}

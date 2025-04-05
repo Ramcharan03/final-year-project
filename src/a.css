@@ -1,0 +1,118 @@
+/* 🎨 Ethereum-Inspired Gradient Background */
+body {
+    font-family: 'Orbitron', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(-45deg, #1a1a2e, #16213e, #0f3460, #e94560, #f39c12, #9b59b6);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+}
+
+/* 🔥 Animated Background */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* 🌀 Futuristic Glowing Borders */
+.neon-border {
+    border: 2px solid #00f2ff;
+    box-shadow: 0 0 10px #00f2ff, 0 0 20px #00f2ff;
+    animation: glowEffect 1.5s infinite alternate;
+}
+
+@keyframes glowEffect {
+    0% { box-shadow: 0 0 15px #00f2ff; }
+    100% { box-shadow: 0 0 25px #ff00ff; }
+}
+
+/* 🚀 Monitoring Panel */
+.monitoring-container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background: rgba(15, 15, 15, 0.9);
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 255, 242, 0.8);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* 🎛️ Buttons with Neon Glow */
+.monitor-button {
+    background: linear-gradient(90deg, #ff00ff, #00f2ff);
+    border: none;
+    color: white;
+    padding: 12px 22px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.monitor-button:hover {
+    background: linear-gradient(90deg, #00f2ff, #ff00ff);
+    box-shadow: 0 0 25px rgba(255, 0, 255, 0.8);
+    transform: scale(1.08);
+}
+
+/* 📜 Futuristic Log Display */
+.logs {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 15px;
+    max-height: 300px;
+    overflow-y: auto;
+    color: #00f2ff;
+    text-shadow: 0 0 10px rgba(0, 242, 255, 0.8);
+    font-size: 1.1rem;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(0, 255, 242, 0.6);
+    animation: pulseGlow 2s infinite alternate;
+}
+
+/* 💡 Glowing Effect on Logs */
+@keyframes pulseGlow {
+    0% { box-shadow: 0 0 10px rgba(0, 255, 242, 0.6); }
+    100% { box-shadow: 0 0 20px rgba(255, 0, 255, 0.8); }
+}
+
+/* 🌀 Floating Effect */
+@keyframes floatEffect {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(6px); }
+    100% { transform: translateY(0px); }
+}
+
+.floating {
+    animation: floatEffect 3s ease-in-out infinite;
+}
+
+/* 🚀 Scrollbar Customization */
+.logs::-webkit-scrollbar {
+    width: 6px;
+}
+
+.logs::-webkit-scrollbar-thumb {
+    background: rgba(0, 255, 242, 0.7);
+    border-radius: 10px;
+}
+
+.logs::-webkit-scrollbar-track {
+    background: rgba(20, 20, 20, 0.5);
+}
+
+/* 🌟 Fancy Heading */
+h1, h2 {
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #00f2ff;
+}
